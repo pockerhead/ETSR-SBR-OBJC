@@ -19,7 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     UIViewController* first = [FoodListConfigurator createModule];
-    [self setViewControllers:@[first]];
+    first.title = @"first";
+    UIViewController* second = [FoodListConfigurator createModule];
+    second.title = @"second";
+    [self setViewControllers:@[first,second]];
     // Do any additional setup after loading the view.
 }
 

@@ -22,17 +22,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self configureUI];
+    [self.presenter viewDidLoad];
 }
 
--(void)configureUI {
-    self.tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
+- (void)configureUI {
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
     [self.view addSubview:self.tableView];
+    [self.tableView fillSuperview];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
 }
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    UITableViewCell* cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"reuse"];
+    UITableViewCell* cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"reuse"];
     cell.textLabel.text = [NSString stringWithFormat:@"%ld", (long)indexPath.section];
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
     return cell;
@@ -42,5 +44,8 @@
     return 10;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.presenter didSelectCellWithIndexPath:indexPath];
+}
 
 @end

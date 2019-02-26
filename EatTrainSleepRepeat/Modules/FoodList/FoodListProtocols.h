@@ -10,15 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef enum : NSUInteger {
-    dissmis = 0,
-    pop = 1,
-    auth = 2,
-} FoodListNavigationOption;
-
 @protocol FoodListWireframeInterface <NSObject>
 
-@required -(void)navigateToOption:(FoodListNavigationOption)option;
+- (void)navigateToDetailWithTitle:(NSString *)title;
 
 @end
 
@@ -28,11 +22,13 @@ typedef enum : NSUInteger {
 
 @protocol FoodListPresenterInterface <NSObject>
 
-@optional -(void)viewDidLoad;
-@optional -(void)viewWillAppear;
-@optional -(void)viewDidAppear;
-@optional -(void)viewWillDissappear;
-@optional -(void)viewDidDissappear;
+- (void)didSelectCellWithIndexPath:(NSIndexPath*)indexPath;
+
+- (void)viewDidLoad;
+- (void)viewWillAppear;
+- (void)viewDidAppear;
+- (void)viewWillDissappear;
+- (void)viewDidDissappear;
 
 @end
 

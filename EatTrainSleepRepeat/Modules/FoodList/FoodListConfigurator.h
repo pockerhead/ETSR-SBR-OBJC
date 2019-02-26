@@ -10,6 +10,6 @@
 
 @interface FoodListConfigurator: NSObject
 
-+(UIViewController*)createModule;
++ (UIViewController *)createModule;
 
 @end

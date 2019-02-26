@@ -12,6 +12,7 @@
 #import "FoodListViewController.h"
 #import "FoodListPresenter.h"
 #import "FoodListProtocols.h"
+#import "FoodListRouter.h"
 
 @interface FoodListConfigurator ()
 
@@ -19,11 +20,14 @@
 
 @implementation FoodListConfigurator
 
-+(UIViewController*)createModule {
-    FoodListViewController<FoodListView> *view = [[FoodListViewController alloc] init];
-    FoodListPresenter<FoodListPresenterInterface> *presenter = [[FoodListPresenter alloc] initWithView:view];
++ (UIViewController *)createModule {
+    FoodListViewController *view = [[FoodListViewController alloc] init];
+    FoodListRouter *router = [[FoodListRouter alloc] init];
+    FoodListPresenter *presenter = [[FoodListPresenter alloc] initWithView:view router:router];
     view.presenter = presenter;
-    return view;
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:view];
+    router.viewController = view;
+    return nav;
 }
 
 @end

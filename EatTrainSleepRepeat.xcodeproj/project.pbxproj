@@ -17,6 +17,12 @@
 		066175B52221A75F00C3754F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 066175B32221A75F00C3754F /* LaunchScreen.storyboard */; };
 		066175B82221A75F00C3754F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 066175B72221A75F00C3754F /* main.m */; };
 		066175C22221A7CC00C3754F /* MainTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 066175C12221A7CC00C3754F /* MainTabbarController.m */; };
+		FE13E20C22251E9C00C37F03 /* FoodListRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = FE13E20B22251E9C00C37F03 /* FoodListRouter.m */; };
+		FE13E2132225227B00C37F03 /* UIView+Constraints.m in Sources */ = {isa = PBXBuildFile; fileRef = FE13E2122225227B00C37F03 /* UIView+Constraints.m */; };
+		FEC7670B2225651C001F22D0 /* FoodAddConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC767022225651C001F22D0 /* FoodAddConfigurator.m */; };
+		FEC7670C2225651C001F22D0 /* FoodAddRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC767042225651C001F22D0 /* FoodAddRouter.m */; };
+		FEC7670D2225651C001F22D0 /* FoodAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC767072225651C001F22D0 /* FoodAddViewController.m */; };
+		FEC7670E2225651C001F22D0 /* FoodAddPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC7670A2225651C001F22D0 /* FoodAddPresenter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +45,21 @@
 		066175B72221A75F00C3754F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		066175C02221A7CC00C3754F /* MainTabbarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabbarController.h; sourceTree = "<group>"; };
 		066175C12221A7CC00C3754F /* MainTabbarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabbarController.m; sourceTree = "<group>"; };
+		FE13E20A22251E9C00C37F03 /* FoodListRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoodListRouter.h; sourceTree = "<group>"; };
+		FE13E20B22251E9C00C37F03 /* FoodListRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoodListRouter.m; sourceTree = "<group>"; };
+		FE13E2112225227B00C37F03 /* UIView+Constraints.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Constraints.h"; sourceTree = "<group>"; };
+		FE13E2122225227B00C37F03 /* UIView+Constraints.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Constraints.m"; sourceTree = "<group>"; };
+		FE13E2142225277C00C37F03 /* ETSR.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ETSR.pch; sourceTree = "<group>"; };
+		FEC767012225651C001F22D0 /* EatTrainSleepRepeat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EatTrainSleepRepeat-Bridging-Header.h"; sourceTree = "<group>"; };
+		FEC767022225651C001F22D0 /* FoodAddConfigurator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoodAddConfigurator.m; sourceTree = "<group>"; };
+		FEC767032225651C001F22D0 /* FoodAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoodAddViewController.h; sourceTree = "<group>"; };
+		FEC767042225651C001F22D0 /* FoodAddRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoodAddRouter.m; sourceTree = "<group>"; };
+		FEC767052225651C001F22D0 /* FoodAddPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoodAddPresenter.h; sourceTree = "<group>"; };
+		FEC767062225651C001F22D0 /* FoodAddProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoodAddProtocols.h; sourceTree = "<group>"; };
+		FEC767072225651C001F22D0 /* FoodAddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoodAddViewController.m; sourceTree = "<group>"; };
+		FEC767082225651C001F22D0 /* FoodAddConfigurator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoodAddConfigurator.h; sourceTree = "<group>"; };
+		FEC767092225651C001F22D0 /* FoodAddRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoodAddRouter.h; sourceTree = "<group>"; };
+		FEC7670A2225651C001F22D0 /* FoodAddPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoodAddPresenter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +76,7 @@
 		064EEB0A222506C60068BBA3 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				FE13E20D2225222100C37F03 /* Extensions */,
 				064EEB0B222506D00068BBA3 /* Managers */,
 			);
 			path = Common;
@@ -72,13 +94,15 @@
 		064EEB1022250A630068BBA3 /* FoodList */ = {
 			isa = PBXGroup;
 			children = (
-				064EEB1122250A900068BBA3 /* FoodListViewController.h */,
+				064EEB1822250B340068BBA3 /* FoodListProtocols.h */,
 				064EEB19222510030068BBA3 /* FoodListConfigurator.h */,
 				064EEB1A222510150068BBA3 /* FoodListConfigurator.m */,
+				064EEB1122250A900068BBA3 /* FoodListViewController.h */,
 				064EEB1222250A900068BBA3 /* FoodListViewController.m */,
 				064EEB1522250AB40068BBA3 /* FoodListPresenter.h */,
 				064EEB1622250AC10068BBA3 /* FoodListPresenter.m */,
-				064EEB1822250B340068BBA3 /* FoodListProtocols.h */,
+				FE13E20A22251E9C00C37F03 /* FoodListRouter.h */,
+				FE13E20B22251E9C00C37F03 /* FoodListRouter.m */,
 			);
 			path = FoodList;
 			sourceTree = "<group>";
@@ -102,9 +126,11 @@
 		066175A42221A75C00C3754F /* EatTrainSleepRepeat */ = {
 			isa = PBXGroup;
 			children = (
+				FE13E2142225277C00C37F03 /* ETSR.pch */,
 				064EEB0A222506C60068BBA3 /* Common */,
 				066175BE2221A76E00C3754F /* Modules */,
 				066175A52221A75C00C3754F /* AppDelegate.h */,
+				FEC767012225651C001F22D0 /* EatTrainSleepRepeat-Bridging-Header.h */,
 				066175A62221A75C00C3754F /* AppDelegate.m */,
 				066175B12221A75F00C3754F /* Assets.xcassets */,
 				066175B32221A75F00C3754F /* LaunchScreen.storyboard */,
@@ -118,6 +144,7 @@
 		066175BE2221A76E00C3754F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				FEC767002225650C001F22D0 /* FoodAdd */,
 				064EEB1022250A630068BBA3 /* FoodList */,
 				066175BF2221A78700C3754F /* MainTabbar */,
 			);
@@ -131,6 +158,31 @@
 				066175C12221A7CC00C3754F /* MainTabbarController.m */,
 			);
 			path = MainTabbar;
+			sourceTree = "<group>";
+		};
+		FE13E20D2225222100C37F03 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FE13E2112225227B00C37F03 /* UIView+Constraints.h */,
+				FE13E2122225227B00C37F03 /* UIView+Constraints.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FEC767002225650C001F22D0 /* FoodAdd */ = {
+			isa = PBXGroup;
+			children = (
+				FEC767082225651C001F22D0 /* FoodAddConfigurator.h */,
+				FEC767022225651C001F22D0 /* FoodAddConfigurator.m */,
+				FEC767032225651C001F22D0 /* FoodAddViewController.h */,
+				FEC767072225651C001F22D0 /* FoodAddViewController.m */,
+				FEC767052225651C001F22D0 /* FoodAddPresenter.h */,
+				FEC7670A2225651C001F22D0 /* FoodAddPresenter.m */,
+				FEC767092225651C001F22D0 /* FoodAddRouter.h */,
+				FEC767042225651C001F22D0 /* FoodAddRouter.m */,
+				FEC767062225651C001F22D0 /* FoodAddProtocols.h */,
+			);
+			path = FoodAdd;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +216,7 @@
 				TargetAttributes = {
 					066175A12221A75C00C3754F = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -202,9 +255,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE13E20C22251E9C00C37F03 /* FoodListRouter.m in Sources */,
 				064EEB1B222510150068BBA3 /* FoodListConfigurator.m in Sources */,
 				064EEB1322250A900068BBA3 /* FoodListViewController.m in Sources */,
+				FE13E2132225227B00C37F03 /* UIView+Constraints.m in Sources */,
+				FEC7670C2225651C001F22D0 /* FoodAddRouter.m in Sources */,
+				FEC7670B2225651C001F22D0 /* FoodAddConfigurator.m in Sources */,
 				066175B02221A75C00C3754F /* EatTrainSleepRepeat.xcdatamodeld in Sources */,
+				FEC7670D2225651C001F22D0 /* FoodAddViewController.m in Sources */,
+				FEC7670E2225651C001F22D0 /* FoodAddPresenter.m in Sources */,
 				066175B82221A75F00C3754F /* main.m in Sources */,
 				064EEB0E2225072F0068BBA3 /* CoreDataManager.m in Sources */,
 				066175C22221A7CC00C3754F /* MainTabbarController.m in Sources */,
@@ -343,15 +402,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54X9L274YP;
+				GCC_PREFIX_HEADER = EatTrainSleepRepeat/ETSR.pch;
 				INFOPLIST_FILE = EatTrainSleepRepeat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pockerhead.EatTrainSleepRepeat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EatTrainSleepRepeat/Modules/FoodAdd/EatTrainSleepRepeat-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -360,15 +425,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54X9L274YP;
+				GCC_PREFIX_HEADER = EatTrainSleepRepeat/ETSR.pch;
 				INFOPLIST_FILE = EatTrainSleepRepeat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.pockerhead.EatTrainSleepRepeat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EatTrainSleepRepeat/Modules/FoodAdd/EatTrainSleepRepeat-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

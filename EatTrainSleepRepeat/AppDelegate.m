@@ -19,8 +19,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     UIViewController* root = [[MainTabbarController alloc] init];
-    _window.rootViewController = root;
-    // Override point for customization after application launch.
+    self.window.rootViewController = root;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

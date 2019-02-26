@@ -9,6 +9,8 @@
 #import "FoodListProtocols.h"
 
 @interface FoodListPresenter: NSObject<FoodListPresenterInterface>
-@property (nonatomic, strong) NSObject<FoodListView> *view;
-- (instancetype)initWithView:(NSObject<FoodListView>*)view;
+@property (nonatomic, weak) NSObject<FoodListView> *view;
+- (instancetype)initWithView:(NSObject<FoodListView>*)view
+                      router:(NSObject<FoodListWireframeInterface>*)router;
+
 @end
